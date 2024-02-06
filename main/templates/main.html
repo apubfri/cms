@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} HOME {% endblock title %}</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://icimod.b-cdn.net/wp-content/uploads/2019/11/favicon.png">
+    <style>
+        /* You can add your custom CSS here */
+        body, html {
+            height: 100%;
+            font-family: 'Roboto', sans-serif; /* Set the font family to Roboto */
+            font-weight: 700; /* Set the font weight to 700 (bold) */
+            color: #FF5733; /* Set the color to a beautiful shade */
+        }
+        .title-text {
+            color: #FF5733; /* Set the color to a beautiful shade */
+        }
+    </style>
+    <!-- Link to Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Bootstrap CSS link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body class="d-flex justify-content-center align-items-center">
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header">
+                <h1 class="display-6 title-text">
+                    <marquee behavior="scroll" direction="left">Welcome to Manik IT World!</marquee>
+                  </h1>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="{% url 'index' %}" class="btn btn-info">Visit Blog</a>
+            </div>
+            <div class="card-footer text-body-secondary">
+                Today, {% now "jS F Y (g:i a)" %}
+            </div>
+          </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
